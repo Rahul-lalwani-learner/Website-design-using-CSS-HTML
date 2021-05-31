@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+:root {
+  --main-bg-color: #2874f0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: var(--main-bg-color);
+}
+footer {
+  height: 40px;
+  background-color: var(--main-bg-color);
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+}
+nav ul li {
+  list-style: none;
+  padding: 0px 23px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 2px 13px;
+  border-radius: 12px;
+  transition: background-color 0.5s ease-out;
+}
+
+nav ul li a:hover {
+  border-radius: 12px;
+  background-color: white;
+  color: var(--main-bg-color);
+  font-weight: bolder;
+}
+nav ul {
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav {
+  display: flex;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 88px;
+  padding: 0 25px;
+}
+.container {
+  min-height: calc(100vh - 60px - 40px);
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+.search input {
+  padding: 5px;
+  width: 30vw;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 50px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.search input:active {
+  border: 2px solid blue;
+}
+.btn img {
+  width: 33px;
+  height: 33px;
+}
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  right: 32px;
+  top: 2px;
+  z-index: 1;
+  background-color: var(--main-bg-color);
+}
+.slider {
+  width: 80vw;
+  margin: 12px auto;
+  overflow: hidden;
+}
+
+.card {
+  max-width: 91vw;
+  margin: 37px auto;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.cards {
+  display: flex;
+  overflow: scroll;
+}
+
+.card-item {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.card h2 {
+  font-family: "Lato", sans-serif;
+}
